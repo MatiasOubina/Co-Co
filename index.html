@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>We are Co·Co</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <video src="/video/video_intro.mp4" muted loop autoplay></video>
+        <div class="logo">
+            <img src="/img/logo.svg" alt="">
+        </div>
+
+        <div class="text">
+            <h2>We are Co·Co</h2>
+            <h3>una Startup enfocada en el crecimiento integral de Negocios.</h3>
+        </div>
+
+        <ul class="social">
+            <p>Seguinos</p>
+            <li><a href="https://www.facebook.com/wearecocoar"><img src="/img/facebook.svg" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/wearecoco.ar/"><img src="/img/instagram.svg" alt="instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/wearecocoar/"><img src="/img/linkedin.svg" alt="linkedin"></a></li>
+        </ul>
+    </header>
+
+    <!--MENU-->
+    <div class="toggle" onclick="seleccionar()">
+        <img src="img/menu.svg" id="menuIcon" alt="Menu">
+    </div>
+
+    <div class="menu" id="menuBox">
+        <ul>
+            <li><a href="#" class="link_menu" onclick="seleccionar()">Home</a></li>
+            <li><a href="#about" class="link_menu" onclick="seleccionar()">¿Quiénes somos?</a></li>
+            <li><a href="#services" class="link_menu" onclick="seleccionar()">Servicios</a></li>
+            <li><a href="#contact" class="link_menu" onclick="seleccionar()">Contáctanos</a></li>
+        </ul>
+    </div>
+
+    <main> 
+        <section class="about" id="about">
+            <div class="about_title">
+                <h2>¿Quiénes somos?</h2>
+            </div>
+
+            <div class="about_text">
+                <div class="about_text_img">
+                    <img src="/img/img_about.jpg" alt="Equipo Co·Co">
+                </div>
+                <div class="about_text_text">
+                    <p>Es una pregunta difícil, lo sabemos. En Co·Co creemos que la respuesta va más allá de simples percepciones, por eso nos apoyamos en lo que ven y sienten nuestros clientes con respecto al trabajo que realizamos. En esencia somos una empresa que basa su trabajo en la experiencia adquirida, tanto de los logros como de los errores en el camino, para guiar, asesorar, organizar y capacitar a Pymes como la suya. Nuestra misión es ayudarle a alcanzar el éxito de forma metódica, con enfoque y sin perder tiempo para que cada meta superada sea celebrada con satisfacción.</p>
+                </div>
+            </div>
+
+            <div class="about_phrase">
+                <span>
+                    <i>
+                        <em>
+                            “Ponga su empresa en nuestro escritorio, haremos la transformación digital que necesita para alcanzar metas más ambiciosas”.
+                        </em>
+                    </i>
+                </span>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="services_title">¿Qué hace Co·Co para las Pymes?</h2>
+
+            <div class="services_container">
+                <div class="services_box">
+                    <img src="/img/icono_diagEmpre.png" alt="">
+                    <h3>Diagnóstico Empresarial</h3>
+                    <p>Solicitá una entrevista. Hacemos un relevamiento y te pasamos un detallado diagnóstico organizacional.</p>
+                    <a href="#contact" class="service_btn">Conozca más</a>
+                </div>
+
+                <div class="services_box">
+                    <img src="/img/icono_transfDigi.png" alt="">
+                    <h3>Transformación Digital</h3>
+                    <p>Descubrí todo lo que podemos hacer por tu organización. Somos expertos digitales. Teletrabajo. Intranet. Procesos y más.</p>
+                    <a href="#contact"class="service_btn">Conozca más</a>
+                </div>
+
+                <div class="services_box">
+                    <img src="/img/icono_consultoriaOrg.png" alt="">
+                    <h3>Consultoría organizacional</h3>
+                    <p>Consultoría integral de empresas y organizaciones. Equipo con más de 20 especialistas. Presencial y Online.</p>
+                    <a href="#contact" class="service_btn">Conozca más</a>
+                </div>
+
+                <div class="services_box">
+                    <img src="/img/icono_coachingEjecutivo.png" alt="">
+                    <h3>Coaching Ejecutivo</h3>
+                    <p>Desarrollá al máximo tu negocio y tu potencial. Coaching y mentoring por CEOs experimentados.</p>
+                    <a href="#contact" class="service_btn">Conozca más</a>
+                </div>
+                
+                <div class="services_box">
+                    <img src="/img/icono_coachingCorpo.png" alt="">
+                    <h3>Coaching Corporativo</h3>
+                    <p>Llevá tu organización al máximo crecimiento y desarrollo. Coachs certificados y psicólogos laborales.</p>
+                    <a href="#contact" class="service_btn">Conozca más</a>
+                </div>
+
+                <div class="services_box">
+                    <img src="/img/icono_desarrolloSoft.png" alt="">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Contamos con un equipo dedicado al desarrollo de software mobile y web. Implementamos soluciones y las integramos mejorando el camino recorrido por tu empresa.</p>
+                    <a href="#contact" class="service_btn">Conozca más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="contact_title">¡Ponete en contacto con nosotros!</h2>
+    
+            <h4 class="contact_title_2">¡Escribinos un mail!</h4>
+            <h3 class="contact_title_3"><a href="#">hola@co-co.com.ar</a></h3>
+    
+            <p class="contact_text">O dejanos un mensaje, nos estaremos contactando con vos:</p>
+    
+            <form method="POST" action="mail.php">
+                <div class="box1">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="text" name="empresa" id="empresa" placeholder="Empresa" required>
+                </div>
+    
+                <div class="box2">
+                    <input type="email" name="correo" id="correo" placeholder="Mail" required>
+                    <input type="text" name="cargo" id="cargo" placeholder="Cargo">
+                </div>
+                <textarea name="mensaje" id="mensaje" cols="55" rows="10" required></textarea>
+                <div class="newsletter">
+                    <input type="checkbox" class="newsletter_input"  name="newsletter"  > 
+                    <p class="newsletter_text">Suscribite a nuestro newsletter</p>
+                </div>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section> 
+    </main>
+
+    <footer>
+        <div class="logo_footer">
+            <img src="/img/logo_footer.jpg" alt="Logo Co·Co">
+        </div>
+
+        <div class="made_with">
+            <p>
+                Hecho con &#128151 por <a href="https://www.linkedin.com/in/matiasoubi/">MO</a>
+            </p>
+        </div>
+
+        <div class="social_footer">
+            <ul class="social_foo">
+                <li><a href="https://www.facebook.com/wearecocoar"><img src="/img/facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/wearecoco.ar/"><img src="/img/instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/company/wearecocoar/"><img src="/img/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const menuToggle = document.getElementById('menuBox');
+
+        function seleccionar(){
+            
+            menuToggle.classList.toggle("open-menu");
+
+            if(menuToggle.classList.contains("open-menu")){
+                menuIcon.src = "img/menu_close.svg";
+    
+            } else {
+                menuIcon.src = "img/menu.svg";
+            }
+        }
+    </script>
+</body>
+</html>
