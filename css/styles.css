@@ -3,11 +3,6 @@
     src: url(/fonts/Korolev/Korolev\ Medium.otf);
 }
 
-@font-face {
-    font-family: 'proximanova-regular';
-    src: url(/fonts/proximaNova/proximanova-regular.otf);
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,80 +10,73 @@
     font-family: Koralev;
 }
 
-img{
-    width:  50px;
-}
-
+/********************************************* HEADER **********************************************/
 header{
-    /* background-color: coral; */
-    z-index: 1000;
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
+    /* background-image: url(/img/home.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
 }
 
-header video{
-    z-index: -1000;
+.header_img_izq img{
+    margin-top: 159px;
+}
+
+.logo_izq{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
+    top: -300px;
+    right: 139px;
 }
 
-.text {
-    align-self: center;
+.logo_izq img{
+    width: 394px;
 }
 
-.logo{
-    margin-top: 25px;
-    margin-left: 50px;
+.txt_we{
+    font-size: 165px;
+    color: #ffffff;
+    position: absolute;
+    top: 205px;
+    left: 373px;
+}
+.txt_are{
+    font-size: 165px;
+    position: absolute;
+    top: 335px;
+    left: 700px;
 }
 
-.text{
-    color: #fff;
-    text-align: center;
-    margin-left: 63px;
+.txt_coco{
+    font-size: 165px;
+    position: absolute;
+    bottom: 70px;
+    right: 377px;
 }
 
-.text h2{
-    font-size: 10rem;
+.txt_coco span{
+    color: #ffffff;
 }
 
-.text h3{
-    font-size: 2rem;
+.logo_der img{
+    width: 394px;
 }
 
-.social{
-    align-self: flex-end;
-    margin-bottom: 70px;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    color: #fff;
+.logo_der{
+    position: absolute;
+    bottom: -448px;
+    left: 175px;
 }
 
-.social li{
-    filter: invert(1);
-    list-style: none;
-    display: inline;
-    margin-left: 35px;
+.header_img_der img{
+    z-index: -100;
+    position: absolute;
+    bottom: 97px;
+    right: 0;
 }
 
-.social li a img{
-    transform: scale(1.5);
-    transition:  0.5s;
-}
 
-.social li a img:hover{
-    transform: scale(2.0) translateY(-15px);
-}
 
-.social img{
-    width: 20px;
-}
+/********************************************* MENU **********************************************/
 
 .toggle{
     position: absolute;
@@ -96,6 +84,10 @@ header video{
     right: 60px;
     cursor: pointer;
     z-index: 1000;
+}
+
+.toggle img{
+    width: 70px;
 }
 
 .menu{
@@ -161,6 +153,8 @@ header video{
     box-shadow: -2px 2px 0 red;
 }
 
+/********************************************* ABOUT **********************************************/
+
 .about{
     height: 100%;
     background-color: black;
@@ -203,6 +197,8 @@ header video{
     font-size: 45px;
 }
 
+/********************************************* SERVICES **********************************************/
+
 .services{
     padding: 15px 20px;
     padding-bottom: 100px;
@@ -235,6 +231,7 @@ header video{
 
 .services_box img{
     filter: invert(1);
+    width: 50px;
 }
 
 .services_box h3{
@@ -263,6 +260,8 @@ header video{
     color: black;
     background-color: #fff;
 }
+
+/********************************************* CONTACT **********************************************/
 
 .contact{
     background-color: black;
@@ -343,6 +342,8 @@ button{
     cursor: pointer;
 }
 
+/********************************************* FOOTER **********************************************/
+
 footer{
     background-color: black;
     border-top: 2px solid #fff;
@@ -388,7 +389,7 @@ footer{
 }
 
 
-/*MEDIA QUERIES*/
+/********************************************* MEDIA QUERIES **********************************************/
 
 @media (max-width: 767px) {
     header{
@@ -564,7 +565,59 @@ footer{
 
 }
 
+/*DESKTOPS*/
 
+@media (min-width: 1441px) and (max-width: 1919px){
+    .header_img_izq img{
+        width: 650px;
+        margin-top: 137px;
+    }
+
+    .logo_izq{
+        top: -261px;
+        right: 140px;
+    }
+    
+    .logo_izq img{
+        width: 340px;
+    }
+
+    .txt_we{
+        font-size: 145px;
+        top: 175px;
+        left: 321px;
+    }
+
+    .txt_are{
+        font-size: 145px;
+        top: 320px;
+        left: 615px;
+    }
+
+    .txt_coco{
+        font-size: 145px;
+        bottom: 300px;
+        right: 335px;
+    }
+
+    .logo_der img{
+        width: 340px;
+    }
+
+    .logo_der{
+        bottom: -140px;
+        left: 142px;
+    }
+
+    .header_img_der img{
+        width: 650px;
+        bottom: 330px;
+        right: 0;
+    }
+
+
+
+}
 
 
 
